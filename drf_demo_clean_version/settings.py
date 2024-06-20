@@ -122,3 +122,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#DRF配置
+REST_FRAMEWORK = {
+'UNAUTHENTICATED_USER': None, # 匿名用户默认为None， 不配置这个，又注释掉了Django的认证系统，就会报错
+}
